@@ -21,6 +21,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 import { RouterModule } from '@angular/router';
+import { ChartsComponent } from './charts/charts.component';
+import { NgChartsModule } from 'ng2-charts';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -28,6 +33,7 @@ import { RouterModule } from '@angular/router';
     NavComponent,
     DashboardComponent,
     LoginComponent,
+    ChartsComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +52,11 @@ import { RouterModule } from '@angular/router';
     MatFormFieldModule,
     MatInputModule,
     RouterModule,
+    NgChartsModule,
+    BrowserModule,
+    BsDropdownModule.forRoot(),
+    TooltipModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
